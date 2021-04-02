@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: 'https://api.github.com/search/repositories?q=created:>2017-10-22&sort=stars&order=desc'
 };
