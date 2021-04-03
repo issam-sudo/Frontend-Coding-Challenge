@@ -25,14 +25,13 @@ export class RepositoriesDetailsComponent implements OnInit {
   }
   
   getRepos(page:number){
-   console.log(page)
+  
    this.page = page
    this.spinnerGetRepos.show()
     this.repos = this.repoListService.getRepo(page).subscribe(
-      repos => {  console.log(repos);
+      repos => { 
         var list:any = repos;
-        this.reposList = list.items;
-        console.log(this.reposList);},
+        this.reposList = list.items;},
         err => console.error('Observer got an error: ' + err),
         () => {console.log('Observer got a complete ');  this.spinnerGetRepos.hide()
       }
