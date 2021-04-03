@@ -1,6 +1,34 @@
 # FrontendCodingChallenge
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+## Link : https://issam-sudo.github.io/Frontend-Coding-Challenge/
+
+## Libraries
+
+### Bootstrap grid system uses a series of containers, rows, and columns to layout and align content
+Installing Bootstrap from NPM (For Bootstrap 4) : npm install bootstrap 
+add "./node_modules/bootstrap/dist/css/bootstrap.min.css" in angular.json
+
+### Angular Material implementation of Google's Material Design
+Install Angular Material Use the Angular CLI's :  ng add @angular/material
+
+
+### ngx-spinner Show/Hide spinner from template waits for API response
+Installing ngx-spinner from NPM :  npm i ngx-spinner
+(https://napster2210.github.io/ngx-spinner/)
+
+### rxjs Reactive programming compose asynchronous and callback-based code
+
+### Angular PWA for Progressive Web Apps
+Add @angular/pwa package : ng add @angular/pwa
+Additionally, it adds ngsw-config.json and manifest.webmanifest for configuration purposes. Also, it modifies angular.json, package.json, index.html and app.module.ts .
+
+### gh-pages Deploy this application to Github
+create a prod build using ng build --prod and then deploy that distribution on the cloud 
+predeploy : ng build --prod
+deploy : npx gh-pages -d dist/frontend-coding-challenge
+
+application will be deployed to https://username.github.io/repository-name/ page. In my case, it deployed to https://issam-sudo.github.io/Frontend-Coding-Challenge/
 
 ## Development server
 

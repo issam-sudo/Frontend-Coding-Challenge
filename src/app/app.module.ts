@@ -9,13 +9,13 @@ import { SharedModulesModule } from './shared/shared-modules/shared-modules.modu
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-     
+
 @NgModule({
   declarations: [
     AppComponent,
     RepositoriesDetailsComponent,
     RepositoriesContainerComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -29,9 +29,9 @@ import { environment } from '../environments/environment';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    
-  
-   ],
+
+
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
