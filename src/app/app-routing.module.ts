@@ -5,8 +5,8 @@ import { RepositoriesDetailsComponent } from './core/components/repositories-det
 
 const routes: Routes = [
   {path:'', component:RepositoriesContainerComponent, children: [
-    {path:'repos' , component:RepositoriesDetailsComponent}]},
-    {path:'**', redirectTo:'repos', pathMatch: 'full'}
+    {path:'' , component:RepositoriesDetailsComponent}]},
+    {path:'**', redirectTo:'', pathMatch: 'full'}
 ];
 
 @NgModule({
