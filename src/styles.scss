@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Importing Bootstrap SCSS file. */
+
+@import '~bootstrap/scss/bootstrap';
+:root {
+    --base-color: #6050dc;
+}
+
 html,
 body {
     height: 100%;
@@ -9,4 +16,25 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.page-item.active {
+    .page-link {
+        background-color: var(--base-color);
+        border-color: var(--base-color);
+    }
+}
+
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+    background-color: var(--base-color);
+}
+
+@include media-breakpoint-down(md) {
+    .centerElement {
+        display: flex;
+        justify-content: center;
+    }
 }
